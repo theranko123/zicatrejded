@@ -10,7 +10,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
 		rel="stylesheet">
-
+	<script src="https://kit.fontawesome.com/044a0dfeee.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -22,13 +22,50 @@
 		<label for="check" class="checkbtn">
 			<i class="fas fa-bars"></i>
 		</label>
-		<a href="" class="logo">Zica Trade</a>
-		<ul>
-			<li><a class="acitve" href="#">Pocetna</a></li>
-			<li><a href="#">Proizvodi</a></li>
-			<li><a href="#">Usluge</a></li>
-			<li><a href="#">O nama</a></li>
-			<li><a href="#">Kontakt</a></li>
+		<ul class="links">
+			<div class="links_1">
+				<a href="" class="logo">Zica Trade</a>
+			</div>
+			<div class="links_2">
+				<li><a class="active" href="#">Početna</a></li>
+				<li class="proizvodi"><a href="#">Proizvodi <i class="fas fa-caret-down"></i> </a></li>
+				<ul class="proizvodi_links">
+					<li><a href="">Pletena žica</a></li>
+					<ul>
+						<li><a href="">Plastifikovana žica</a></li>
+						<li><a href="">Pocinkovana žica</a></li>
+					</ul>
+
+					<li><a href="">Zatezna žica</a></li>
+					<ul class="zateznaZica_links">
+						<li><a href="">Plastifikovana žica</a></li>
+						<li><a href="">Pocinkovana žica</a></li>
+					</ul>
+					<li><a href="">Panelne ograde</a></li>
+					<ul class="panelneOgrade_links">
+						<li><a href="">3D Paneli</a></li>
+						<li><a href="">2D Paneli</a></li>
+						<li><a href="">Živa ograda</a></li>
+						<li><a href="">Hexagon pletiva</a></li>
+						<li><a href="">Rabic pletiva</a></li>
+						<li><a href="">Ekseri</a></li>
+						<li><a href="">Paljena žica</a></li>
+					</ul>
+
+
+				</ul>
+				<li><a href="#">Usluge</a></li>
+				<ul class="usluge_links">
+					<li><a href="">Veleprodaja</a></li>
+					<li><a href="">Maloprodaja</a></li>
+					<li><a href="">Montaža</a></li>
+				</ul>
+
+				<li><a href="#">O nama</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</div>
+		</ul>
+
 		</ul>
 	</nav>
 	<section>
@@ -87,5 +124,6 @@
 		</div>
 	</div>
 </footer>
+<script src="index.js"></script>
 
 </html>

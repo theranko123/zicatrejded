@@ -13,46 +13,65 @@ body {
 }
 
 nav {
-	background-image: url("164048685.jpg");
-	background-color: #17171879;
+	background-color: #0d0d0ea2;
 	background-size: cover;
 	background-position: center;
-	height: 80px;
+	height: 75px;
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-a.logo {
+.links {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.links_2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav li a {
 	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
+	padding-left: 45px;
 }
 
-nav ul {
-	float: right;
-	margin-right: 20px;
-}
-
-nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-
-nav ul li a {
-	color: white;
-	font-size: 14px;
-	padding: 7px 13px;
-	border-radius: 3px;
-	text-transform: uppercase;
-}
-
-nav ul li a:hover {
+nav li a:hover {
 	color: #e0ac1c;
 	transition: 0.5s;
+}
+
+.logo {
+	color: white;
+	font-size: 22px;
+}
+
+.proizvodi_links {
+	display: none;
+	position: relative;
+	background-color: rgb(78, 78, 78);
+	padding: 2%;
+}
+
+.zateznaZica_links {
+	display: none;
+}
+
+.panelneOgrade_links {
+	display: none;
+}
+
+.usluge_links {
+	display: none;
 }
 
 .checkbtn {
