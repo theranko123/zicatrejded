@@ -4,5 +4,6 @@
 -Fixati slike na MAIN PAGE.
 -Dodati tekst svuda gde fali.
 -Povezati href loga na responzivnom delu do index.html
+-Promeni kontakt informacije na svakom pageu.
 
 NE DIRAJ CAVO OVO JA RADIM.
