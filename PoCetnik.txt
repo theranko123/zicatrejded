@@ -1,0 +1,8 @@
+-Dodati u NAVBAR Stubove i Farmersko pletivo (Prateci materijal da bude na kraju NAVBARA)
+-Ubaciti logo (sliku) na svakom page.
+-Ubaciti logo (sliku) na svakom tab-u.
+-Fixati slike na MAIN PAGE.
+-Dodati tekst svuda gde fali.
+-Povezati href loga na responzivnom delu do index.html
+
+NE DIRAJ CAVO OVO JA RADIM.
