@@ -571,6 +571,11 @@ footer {
 .image_gallery_sm img {
 	margin: 10px;
 	width: 350px;
+	transition: 1s;
+}
+
+.slika img:hover {
+	transform: scale(1.1);
 }
 
 .bottomDiv {
@@ -597,14 +602,12 @@ footer {
 @media (max-width: 1600px) {
 	.image_gallery_sm img {
 		width: 300px;
-		height: 300px;
 	}
 }
 
 @media (max-width: 1400px) {
 	.image_gallery_sm img {
 		width: 240px;
-		height: 240px;
 	}
 	.image_gallery_sm {
 		width: 70%;

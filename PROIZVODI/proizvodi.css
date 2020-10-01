@@ -493,7 +493,8 @@ footer {
   
   .news-card__title {
       transition: color 1s ease;
-      margin-bottom: .5rem;
+	  margin-bottom: .5rem;
+	  
     }
   
   .news-card__post-about {
@@ -543,7 +544,7 @@ footer {
   
   .news-card__read-more:hover i {
         left: 0.5rem;
-        color: yellow;
+        color: rgb(255, 187, 0);
       }
   
 
