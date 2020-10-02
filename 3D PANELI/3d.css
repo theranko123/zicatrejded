@@ -571,7 +571,17 @@ main {
 		width: 93%;
 	}
 	.small_images img {
-		width: 30.5%;
+		width: 78%;
+	}
+	.big_image a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.small_images a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.big_image {
 		display: flex;

@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+	top: 0;
 	position: fixed;
 	height: 70px;
 	width: 100%;
@@ -56,6 +57,7 @@ nav {
 .logo {
 	font-weight: bold;
 	font-size: 22px;
+
 }
 
 .container {
@@ -241,6 +243,21 @@ nav a {
 	transition: 0.5s;
 }
 
+.farmerskoPletivo a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.stubovi a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .usluge_links {
 	display: none;
 }
@@ -276,11 +293,9 @@ nav a {
 	display: none;
 }
 
-
-
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 }
 
 .footer-company-name a {
@@ -422,62 +437,186 @@ footer {
 	margin-bottom: 5px;
 }
 
-.bgnd{
+main {
 	position: relative;
+	top: 70px
+}
+
+.container_main {
 	width: 65%;
 	margin: auto;
-	background-color: white;
-	padding-top: 400px;
-	padding-bottom:0px ;
-	border-style: solid;
-
+	margin-top: 130px;
+	padding-bottom: 100px;
+	margin-bottom: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
-.name{
-	position: relative;
+.oProizvodu {
+	margin-top: 100px;
+	width: 80%;
+}
+
+.oProizvodu h1 {
+	color: #3a3a3a;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.oProizvodu p {
+	margin-top: 50px;
+	line-height: 25px;
+	color: #3a3a3a;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title h1 {
+	color: rgb(31, 31, 31);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 52px;
 	text-align: center;
-	margin-top: -250px;
-	border-style: solid;
-	margin-bottom: 50px;
-}
-
-.vSlika img{
-
-
-	width: 60%;
-	display: flex;
-	border-style: solid;
-}
-
-
-
-
-
-.slika{
 	position: relative;
-	width: 40%;
-	border-style: solid;
+	margin-top: 30px;
+}
+
+.gallery {
 	display: flex;
-	margin-left: 60%;
-	top:-985px;
+	flex-direction: column;
 }
 
-
-.slika img{
-	transition: 1s;
-	padding: 15px;
-	width: 100%;
-}
-
-.slika img:hover{
+.big_image img {
+	width: 90%;
 	
-	transform:scale(1.1);
 }
 
+.small_images img {
+	width: 29.8%;
+}
+
+.sideNav_proizvodi {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.sideNav_proizvodi ul li a {
+	color: #707070;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.sideNav_proizvodi ul li a:hover {
+	color: #2c2c2c;
+}
+
+.sideNav_kontakt {
+	margin-top: 30px;
+}
+
+.sideNav_proizvodi ul {
+	margin-top: 20px;
+}
+
+.sideNav_proizvodi li {
+	margin-top: 10px;
+	list-style: none;
+}
+
+.sideNav_proizvodi h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	color: #616161;
+}
+
+.sideNav_kontakt li {
+	list-style: none;
+	height: 45px;
+}
+
+.sideNav_kontakt div {
+	display: flex;
+}
+
+.sideNav_kontakt div i {
+	padding: 2px 10px 1px 1px;
+}
+
+.sideNav_kontakt ul {
+	margin-top: 20px;
+}
+
+.sideNav_kontakt h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	color: #616161;
+}
+
+.sideNav_kontakt ul div li {
+	color: #707070;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.sideNav_kontakt ul div i {
+	color: #707070;
+}
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 
+@media (max-width: 1600px) {
+	.oProizvodu {
+		margin-top: 65px;
+		width: 90%;
+	}
+	.big_image img {
+		width: 93%;
+	}
+	.small_images img {
+		width: 30.7%;
+	}
+	.oProizvodu h1 {
+		font-size: 30px;
+	}
+}
+
 @media (max-width: 1200px) {
+	.big_image img {
+		width: 93%;
+	}
+	.small_images img {
+		width: 30.5%;
+	}
+	.big_image {
+		display: flex;
+		justify-content: center;
+	}
+	.small_images {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+	.small_images img {
+		margin: 5px;
+	}
+	.container_main {
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+	}
+	.oProizvodu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 92%;
+		margin: 100px auto;
+	}
+	.sideNav {
+		display: none;
+	}
 	.container {
 		display: none;
 	}
@@ -704,6 +843,46 @@ footer {
 	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
+}
+
+@media (max-width:800px) {
+	.big_image img {
+		width: 100%;
+		
+	}
+	.small_images img {
+		width: 100%;
+	}
+	.big_image {
+		display: flex;
+		justify-content: center;
+	}
+	.small_images {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.small_images img {
+		margin: 5px;
+	}
+	.container_main {
+		width: 85%;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+		padding-bottom: 60px;
+	}
+	.oProizvodu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		margin: 50px auto;
+		padding-bottom: 10px;
+	}
+	.title h1 {}
 }
 
 @media (max-height:800px) {

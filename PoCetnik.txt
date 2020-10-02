@@ -5,5 +5,13 @@
 -Dodati tekst svuda gde fali.
 -Povezati href loga na responzivnom delu do index.html
 -Promeni kontakt informacije na svakom pageu.
+-Dodati na svakom CSS fajlu
 
+	.prateciMaterijal a:hover {
+		color: rgb(255, 187, 0);
+		transition: 0.5s;
+	}
+-Dodati na svakom CSS fajlu u NAV
+
+	top: 0;
 NE DIRAJ CAVO OVO JA RADIM.
