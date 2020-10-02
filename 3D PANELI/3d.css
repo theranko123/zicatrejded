@@ -57,7 +57,6 @@ nav {
 .logo {
 	font-weight: bold;
 	font-size: 22px;
-
 }
 
 .container {
@@ -456,8 +455,8 @@ main {
 }
 
 .title h1 {
-	color: rgb(31, 31, 31);
-	font-family: 'Montserrat', sans-serif;
+	color: rgb(48, 48, 48);
+	font-family: 'Abril Fatface', cursive;
 	font-size: 52px;
 	text-align: center;
 	position: relative;
