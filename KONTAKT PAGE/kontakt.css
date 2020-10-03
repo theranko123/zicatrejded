@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: rgb(17, 17, 20);
+	background-color: white;
 }
 
 nav {
@@ -18,6 +18,29 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1000;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 30px 30px 30px rgb(44, 47, 55);
+	background: radial-gradient(circle, rgba(44, 47, 55, 1) 0%, rgba(23, 24, 27, 1) 75%, rgba(27, 27, 27, 1) 100%);
+	/* box-shadow: 0 0 30px gray; */
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #494c4e, #323536);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background-color: rgb(131, 131, 131);
+	border-radius: 20px;
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .fa-chevron-down {
@@ -68,7 +91,6 @@ nav a {
 
 .main_links:hover {
 	border-top: 2px solid rgb(255, 187, 0);
-	color: rgb(255, 255, 255);
 }
 
 .proizvodi-links {
@@ -78,9 +100,14 @@ nav a {
 .proizvodi_container:hover .proizvodi-links {
 	display: block;
 	position: absolute;
-	background-color: rgb(15, 19, 26);
+	background-color: #08080a;
 	width: 200px;
 	margin: 24px;
+	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.proizvodi_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .dropdown_container li {
@@ -100,7 +127,7 @@ nav a {
 }
 
 .dropdown_container div:hover {
-	background-color: rgb(15, 19, 26);
+	background-color: #08080a;
 }
 
 .pletenaZica_container {
@@ -128,7 +155,7 @@ nav a {
 .pletenaZica_container:hover .pletenaZica_links {
 	display: block;
 	position: absolute;
-	background-color: rgb(15, 19, 26);
+	background-color: #08080a;
 	width: 200px;
 	top: 0px;
 	right: -200px;
@@ -152,7 +179,7 @@ nav a {
 .zateznaZica_container:hover .zateznaZica_links {
 	display: block;
 	position: absolute;
-	background-color: rgb(15, 19, 26);
+	background-color: #08080a;
 	width: 200px;
 	top: 95px;
 	right: -200px;
@@ -176,7 +203,7 @@ nav a {
 .panelneOgrade_container:hover .panelneOgrade_links {
 	display: block;
 	position: absolute;
-	background-color: rgb(15, 19, 26);
+	background-color: #08080a;
 	width: 200px;
 	top: 47px;
 	right: -200px;
@@ -213,6 +240,16 @@ nav a {
 	transition: 0.5s;
 }
 
+.bodljikavaZica a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .ekseri a:hover {
 	color: rgb(255, 187, 0);
 	transition: 0.5s;
@@ -240,9 +277,14 @@ nav a {
 .usluge_container:hover .usluge_links {
 	display: block;
 	position: absolute;
-	background-color: rgb(15, 19, 26);
+	background-color: #08080a;
 	width: 200px;
 	margin: 24px;
+	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.usluge_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .responsive_navbar {
@@ -254,8 +296,8 @@ nav a {
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
+	position: relative;
+	bottom: 0px;
 }
 
 .footer-company-name a {
@@ -269,7 +311,6 @@ footer {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -283,12 +324,14 @@ footer {
 
 .footer-distributed h3 {
 	color: #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
 	margin: 0;
 }
 
 .footer-distributed .footer-left img {
-	width: 30%;
+	width: 40px;
+	background-color: white;
 }
 
 .footer-distributed h3 span {
@@ -395,9 +438,14 @@ footer {
 	margin-bottom: 5px;
 }
 
-/* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
-
 @media (max-width: 1200px) {
+	.responsive_navbar {
+		display: flex;
+		z-index: 1000;
+	}
+	.image_gallery_sm {
+		width: 85%;
+	}
 	.container {
 		display: none;
 	}
@@ -411,6 +459,7 @@ footer {
 	.fa-bars {
 		color: white;
 		font-size: 22px;
+		display: flex;
 	}
 	.fa-times {
 		color: white;
@@ -471,6 +520,7 @@ footer {
 		display: none;
 		position: fixed;
 		background-color: rgb(15, 19, 26);
+		z-index: 900;
 	}
 	.pletenaZica_links_responsive {
 		display: none;
@@ -612,7 +662,7 @@ footer {
     } */
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
@@ -624,10 +674,10 @@ footer {
 	}
 }
 
-@media (max-height:800px) {
+@media (max-height: 800px) {
 	footer {
-		position: fixed;
-		bottom: 0;
+		position: relative;
+		bottom: 0px;
 	}
 	header {
 		padding-top: 40px;

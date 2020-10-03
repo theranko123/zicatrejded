@@ -104,7 +104,8 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
 }
 
 .dropdown_container li {
@@ -266,7 +267,8 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
 }
 
 .responsive_navbar {
@@ -456,7 +458,7 @@ main {
 
 .title h1 {
 	color: rgb(48, 48, 48);
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 52px;
 	text-align: center;
 	position: relative;
