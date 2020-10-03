@@ -330,6 +330,7 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
+	background-color: ;
 }
 
 .footer-distributed h3 span {
@@ -436,9 +437,7 @@ footer {
 	margin-bottom: 5px;
 }
 
-.copyright {
-	display: none;
-}
+
 
 main {
 	position: relative;
@@ -843,24 +842,6 @@ main {
 }
 
 @media (max-width: 880px) {
-	.desktop_copyright a {
-		display: none;
-	}
-	.dekstop_copyright p {
-		display: none;
-	}
-	.copyright {
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		background-color: rgb(19, 19, 19);
-		padding: 6px;
-	}
-	.copyright p {
-		display: block;
-	}
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
@@ -870,9 +851,7 @@ main {
 	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
-	.footer-company-name {
-		display: none;
-	}
+
 }
 
 @media (max-width:800px) {
