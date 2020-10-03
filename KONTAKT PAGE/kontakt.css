@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+	top: 0;
 	position: fixed;
 	height: 70px;
 	width: 100%;
@@ -436,6 +437,11 @@ footer {
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+main {
+	position: relative;
+	margin-top: 70px;
 }
 
 @media (max-width: 1200px) {
