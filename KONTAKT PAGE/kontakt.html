@@ -282,13 +282,15 @@
 				</div>
 				<div class="form_container">
 					<h1>Posaljite poruku</h1>
-					<div class="form">
-						<input class="ime" type="text" placeholder="Unesite Vaše ime">
-						<input class="email" type="text" placeholder="Unesite Vaš e-mail">
-						<textarea name="poruka" placeholder="Unesite poruku"></textarea>
+					<form action="POST" class="form " data-netlify="true">
+						<input id="ime" class="ime" name="name" type="text" placeholder="Unesite Vaše ime">
+						<input id="email" class="email" name="email" type="text" placeholder="Unesite Vaš e-mail">
+						<textarea id="poruka" name="message" placeholder="Unesite poruku"></textarea>
+						<div data-netlify-recaptcha="true"></div>
 						<button class="posalji_button">Posalji</button>
-					</div>
+					</form>
 				</div>
+
 			</div>
 		</div>
 		<div class="googleMapa_container">
@@ -374,5 +376,6 @@
 </body>
 
 <script src="../JAVASCRIPT/responsive_navbar.js"></script>
+<script src="../JAVASCRIPT/kontaktForma.js"></script>
 
 </html>
