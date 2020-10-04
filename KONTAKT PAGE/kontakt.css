@@ -298,7 +298,7 @@ nav a {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 }
 
 .footer-company-name a {
@@ -309,7 +309,7 @@ footer {
 	background-color: #08080a;
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
 }
@@ -317,10 +317,11 @@ footer {
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .footer-distributed .footer-left {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed h3 {
@@ -332,7 +333,6 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
-	background-color: white;
 }
 
 .footer-distributed h3 span {
@@ -359,7 +359,7 @@ footer {
 }
 
 .footer-distributed .footer-center {
-	width: 35%;
+	width: 22%;
 }
 
 .footer-distributed .footer-center i {
@@ -401,7 +401,7 @@ footer {
 }
 
 .footer-distributed .footer-right {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed .footer-company-about {
@@ -439,18 +439,31 @@ footer {
 	margin-bottom: 5px;
 }
 
+.phone_copyright {
+	display: none;
+}
+
 main {
 	position: relative;
 	margin-top: 70px;
+	background-color: rgba(238, 238, 238, 0.041);
+}
+
+.title {
+	background-image: url("../Images/kontakt_image.jpg");
+	background-position: center;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .title h1 {
-	color: #3f3f3f;
+	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 52px;
 	text-align: center;
 	position: relative;
-	margin-top: 100px;
+	top: 65px;
 }
 
 .informacije_forma_container {
@@ -471,6 +484,7 @@ main {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 .informacije ul li {
@@ -478,7 +492,11 @@ main {
 	margin-top: 30px;
 	color: #5B5951;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
+	font-size: 15px;
+}
+
+.informacije ul li span {
+	margin-left: 15px;
 }
 
 .informacije ul {
@@ -486,8 +504,10 @@ main {
 }
 
 .informacije i {
-	padding-right: 15px;
-	color: #5B5951;
+	color: #ffffff;
+	font-size: 20px;
+	background-color: rgb(255, 196, 0);
+	padding: 5px;
 }
 
 .form_container h1 {
@@ -495,6 +515,15 @@ main {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
 	text-align: center;
+	letter-spacing: 1px;
+}
+
+.form input[type=text]:focus {
+	outline: 2px solid orange;
+}
+
+.form textarea:focus {
+	outline: 2px solid orange;
 }
 
 .form {
@@ -504,7 +533,7 @@ main {
 }
 
 .form input {
-	height: 40px;
+	height: 50px;
 	padding: 5px;
 	margin-top: 20px;
 }
@@ -513,40 +542,101 @@ main {
 	margin-top: 20px;
 	color: #5B5951;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .form input {
 	color: #5B5951;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
+	border: 1px rgb(184, 184, 184) solid;
 }
 
 .form textarea {
 	resize: none;
-	height: 100px;
+	height: 200px;
 	padding: 5px;
+	border: 1px rgb(184, 184, 184) solid;
 }
 
 .posalji_button {
-	width: 30%;
-	background-color: #4B4B4B;
+	width: 40%;
+	background-color: #2e2e2e;
 	border: none;
 	color: rgb(226, 226, 226);
 	margin-top: 15px;
+	font-size: 14px;
 	text-align: center;
-	padding: 3%;
+	padding: 4%;
 	cursor: pointer;
 	outline: none;
+}
+
+.posalji_button:hover {
+	background-color: #414141;
+	color: rgb(238, 238, 238);
 }
 
 .googleMapa {
 	max-width: 100%;
 	width: 100%;
 	height: 400px;
+	position: relative;
+	bottom: -5px;
+}
+
+@media (max-width: 1700px) {
+	.informacije_forma_container {
+		width: 65%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-bottom: 15%;
+		margin: auto;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 25%;
+	}
+	.footer-distributed .footer-right {
+		width: 25%;
+	}
+	.footer-distributed .footer-center {
+		width: 25%;
+	}
 }
 
 @media (max-width: 1200px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 30%;
+	}
+	.footer-distributed .footer-right {
+		width: 30%;
+	}
+	.footer-distributed .footer-center {
+		width: 30%;
+	}
+	.informacije_forma_container {
+		width: 85%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-bottom: 15%;
+		margin: auto;
+	}
 	.responsive_navbar {
 		display: flex;
 		z-index: 1000;
@@ -770,7 +860,46 @@ main {
     } */
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+	.informacije_forma_container {
+		width: 65%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 20%;
+		margin: auto;
+	}
+	.form_container {
+		margin-top: 100px;
+	}
+	.form {
+		margin-top: 55px;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.desktop_copyright a {
+		display: none;
+	}
+	.dekstop_copyright p {
+		display: none;
+	}
+	.desktop_copyright {
+		display: none;
+	}
+	.phone_copyright {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgb(19, 19, 19);
+		padding: 6px;
+	}
+	.phone_copyright p {
+		display: block;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
@@ -782,12 +911,168 @@ main {
 	}
 }
 
-@media (max-height: 800px) {
+@media (max-width:800px) {
+	.big_image img {
+		width: 100%;
+	}
+	.small_images img {
+		width: 100%;
+	}
+	.big_image {
+		display: flex;
+		justify-content: center;
+	}
+	.small_images {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.small_images img {
+		margin: 5px;
+	}
+	.container_main {
+		width: 85%;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+		padding-bottom: 60px;
+	}
+	.oProizvodu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		margin: 50px auto;
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-height:800px) {
 	footer {
 		position: relative;
 		bottom: 0px;
 	}
 	header {
 		padding-top: 40px;
+	}
+}
+
+@media (max-width:600px) {
+	.informacije_forma_container {
+		width: 90%;
+		padding-bottom: 45%;
+	}
+	.informacije h1 {
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 6vw;
+		text-align: center;
+	}
+	.form_container h1 {
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 6vw;
+		text-align: center;
+	}
+	.informacije ul li {
+		list-style: none;
+		margin-top: 30px;
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3vw;
+	}
+	.informacije i {
+		color: #ffffff;
+		font-size: 4vw;
+		background-color: rgb(255, 196, 0);
+		padding: 5px;
+	}
+	.form input {
+		height: 50px;
+		padding: 5px;
+		margin-top: 20px;
+		width: 380px;
+	}
+}
+
+@media (max-width: 400px) {
+	.informacije_forma_container {
+		width: 90%;
+		padding-bottom: 45%;
+	}
+	.informacije h1 {
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 8vw;
+		text-align: center;
+	}
+	.informacije ul li {
+		list-style: none;
+		margin-top: 30px;
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 4vw;
+	}
+	.informacije ul li span {
+		margin-left: 15px;
+	}
+	.informacije ul {
+		margin-top: 70px;
+	}
+	.informacije i {
+		color: #ffffff;
+		font-size: 5vw;
+		background-color: rgb(255, 196, 0);
+		padding: 5px;
+	}
+	.form_container h1 {
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 8vw;
+		text-align: center;
+	}
+	.form {
+		margin-top: 70px;
+		display: flex;
+		flex-direction: column;
+	}
+	.form input {
+		height: 50px;
+		padding: 5px;
+		margin-top: 20px;
+		width: 290px;
+	}
+	.form textarea {
+		margin-top: 20px;
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3.7vw;
+	}
+	.form input {
+		color: #5B5951;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3.7vw;
+		border: 1px rgb(184, 184, 184) solid;
+	}
+	.form textarea {
+		width: 290px;
+		resize: none;
+		height: 200px;
+		padding: 5px;
+		border: 1px rgb(184, 184, 184) solid;
+	}
+	.posalji_button {
+		width: 40%;
+		background-color: #2e2e2e;
+		border: none;
+		color: rgb(226, 226, 226);
+		margin-top: 15px;
+		font-size: 14px;
+		text-align: center;
+		padding: 4%;
+		cursor: pointer;
+		outline: none;
 	}
 }
