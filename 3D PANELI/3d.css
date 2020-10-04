@@ -92,7 +92,6 @@ nav a {
 
 .main_links:hover {
 	border-top: 2px solid rgb(255, 187, 0);
-	color: rgb(255, 255, 255);
 }
 
 .proizvodi-links {
@@ -243,6 +242,21 @@ nav a {
 	transition: 0.5s;
 }
 
+.farmerskoPletivo a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.stubovi a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .usluge_links {
 	display: none;
 }
@@ -292,19 +306,19 @@ footer {
 	background-color: #08080a;
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .footer-distributed .footer-left {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed h3 {
@@ -316,7 +330,6 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
-	background-color: white;
 }
 
 .footer-distributed h3 span {
@@ -343,7 +356,7 @@ footer {
 }
 
 .footer-distributed .footer-center {
-	width: 35%;
+	width: 22%;
 }
 
 .footer-distributed .footer-center i {
@@ -385,7 +398,7 @@ footer {
 }
 
 .footer-distributed .footer-right {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed .footer-company-about {
@@ -423,6 +436,10 @@ footer {
 	margin-bottom: 5px;
 }
 
+.phone_copyright {
+	display: none;
+}
+
 main {
 	position: relative;
 	top: 70px
@@ -457,7 +474,7 @@ main {
 }
 
 .title h1 {
-	color: rgb(48, 48, 48);
+	color: rgb(31, 31, 31);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 52px;
 	text-align: center;
@@ -552,6 +569,23 @@ main {
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 
+@media (max-width: 1700px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 25%;
+	}
+	.footer-distributed .footer-right {
+		width: 25%;
+	}
+	.footer-distributed .footer-center {
+		width: 25%;
+	}
+}
+
 @media (max-width: 1600px) {
 	.oProizvodu {
 		margin-top: 65px;
@@ -569,21 +603,25 @@ main {
 }
 
 @media (max-width: 1200px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 30%;
+	}
+	.footer-distributed .footer-right {
+		width: 30%;
+	}
+	.footer-distributed .footer-center {
+		width: 30%;
+	}
 	.big_image img {
 		width: 93%;
 	}
 	.small_images img {
 		width: 78%;
-	}
-	.big_image a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.small_images a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	.big_image {
 		display: flex;
@@ -594,8 +632,15 @@ main {
 		display: flex;
 		justify-content: center;
 	}
-	.small_images img {
-		margin: 5px;
+	.big_image a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.small_images a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.container_main {
 		width: 90%;
@@ -828,7 +873,30 @@ main {
     } */
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.desktop_copyright a {
+		display: none;
+	}
+	.dekstop_copyright p {
+		display: none;
+	}
+	.desktop_copyright {
+		display: none;
+	}
+	.phone_copyright {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgb(19, 19, 19);
+		padding: 6px;
+	}
+	.phone_copyright p {
+		display: block;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
