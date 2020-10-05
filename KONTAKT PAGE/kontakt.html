@@ -283,8 +283,8 @@
 				<div class="form_container">
 					<h1>Posaljite poruku</h1>
 					<form action="../KONTAKT PAGE/kontakt.html" class="form " data-netlify="true">
-						<input id="ime" class="ime" name="name" type="text" placeholder="Unesite Vaše ime">
-						<input id="email" class="email" name="email" type="text" placeholder="Unesite Vaš e-mail">
+						<input id="ime" class="ime" name="name" type="text" placeholder="Unesite Vaše ime" >
+						<input id="email" class="email" name="email" type="text" placeholder="Unesite Vaš e-mail" pattern=".+@" size="30" oninvalid="this.setCustomValidity('Upišite ispravnu mail adresu.')" required>
 						<textarea id="poruka" name="message" placeholder="Unesite poruku"></textarea>
 						<div class="captcha" data-netlify-recaptcha="true"></div>
 						<button class="posalji_button">Posalji</button>
