@@ -297,7 +297,7 @@ nav a {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 }
 
 .footer-company-name a {
@@ -308,7 +308,7 @@ footer {
 	background-color: #08080a;
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
 }
@@ -316,10 +316,11 @@ footer {
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .footer-distributed .footer-left {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed h3 {
@@ -331,7 +332,6 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
-	background-color: white;
 }
 
 .footer-distributed h3 span {
@@ -358,7 +358,7 @@ footer {
 }
 
 .footer-distributed .footer-center {
-	width: 35%;
+	width: 22%;
 }
 
 .footer-distributed .footer-center i {
@@ -400,7 +400,7 @@ footer {
 }
 
 .footer-distributed .footer-right {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed .footer-company-about {
@@ -436,6 +436,10 @@ footer {
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.phone_copyright {
+	display: none;
 }
 
 .hero {
@@ -856,6 +860,41 @@ footer {
 	}
 	.hero h2 {
 		font-size: 4vw;
+	}
+}
+
+@media (max-width: 1000px) {
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.desktop_copyright a {
+		display: none;
+	}
+	.dekstop_copyright p {
+		display: none;
+	}
+	.desktop_copyright {
+		display: none;
+	}
+	.phone_copyright {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgb(19, 19, 19);
+		padding: 6px;
+	}
+	.phone_copyright p {
+		display: block;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
 	}
 }
 
