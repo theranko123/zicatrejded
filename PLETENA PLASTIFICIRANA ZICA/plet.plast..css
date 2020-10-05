@@ -309,12 +309,12 @@ footer {
 	text-align: center;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .footer-distributed .footer-left {
@@ -330,7 +330,6 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
-	background-color: ;
 }
 
 .footer-distributed h3 span {
@@ -435,6 +434,10 @@ footer {
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.phone_copyright {
+	display: none;
 }
 
 main {
@@ -566,6 +569,23 @@ main {
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 
+@media (max-width: 1700px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 25%;
+	}
+	.footer-distributed .footer-right {
+		width: 25%;
+	}
+	.footer-distributed .footer-center {
+		width: 25%;
+	}
+}
+
 @media (max-width: 1600px) {
 	.oProizvodu {
 		margin-top: 65px;
@@ -583,6 +603,20 @@ main {
 }
 
 @media (max-width: 1200px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 30%;
+	}
+	.footer-distributed .footer-right {
+		width: 30%;
+	}
+	.footer-distributed .footer-center {
+		width: 30%;
+	}
 	.big_image img {
 		width: 93%;
 	}
@@ -839,7 +873,30 @@ main {
     } */
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.desktop_copyright a {
+		display: none;
+	}
+	.dekstop_copyright p {
+		display: none;
+	}
+	.desktop_copyright {
+		display: none;
+	}
+	.phone_copyright {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgb(19, 19, 19);
+		padding: 6px;
+	}
+	.phone_copyright p {
+		display: block;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
