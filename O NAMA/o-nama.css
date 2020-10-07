@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+	top: 0;
 	position: fixed;
 	height: 70px;
 	width: 100%;
@@ -91,7 +92,6 @@ nav a {
 
 .main_links:hover {
 	border-top: 2px solid rgb(255, 187, 0);
-	color: rgb(255, 255, 255);
 }
 
 .proizvodi-links {
@@ -103,7 +103,8 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
 }
 
 .dropdown_container li {
@@ -241,6 +242,21 @@ nav a {
 	transition: 0.5s;
 }
 
+.farmerskoPletivo a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.stubovi a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .usluge_links {
 	display: none;
 }
@@ -265,7 +281,8 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
 }
 
 .responsive_navbar {
@@ -276,11 +293,10 @@ nav a {
 	display: none;
 }
 
-
-
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
+	margin-top: 150px;
 }
 
 .footer-company-name a {
@@ -291,19 +307,19 @@ footer {
 	background-color: #08080a;
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .footer-distributed .footer-left {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed h3 {
@@ -315,7 +331,6 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
-	background-color: white;
 }
 
 .footer-distributed h3 span {
@@ -342,7 +357,7 @@ footer {
 }
 
 .footer-distributed .footer-center {
-	width: 35%;
+	width: 22%;
 }
 
 .footer-distributed .footer-center i {
@@ -384,7 +399,7 @@ footer {
 }
 
 .footer-distributed .footer-right {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed .footer-company-about {
@@ -422,62 +437,174 @@ footer {
 	margin-bottom: 5px;
 }
 
-.bgnd{
-	position: relative;
+.phone_copyright {
+	display: none;
+}
+
+main {
+	margin-top: 70px;
+}
+
+.hero {
+	width: 100%;
+	height: 450px;
+	background-image: url("../Images/background_aboutus.jpg");
+	background-position: center;
+	display: flex;
+	align-items: center;
+}
+
+.hero_child {
 	width: 65%;
 	margin: auto;
-	background-color: white;
-	padding-top: 400px;
-	padding-bottom:0px ;
-	border-style: solid;
-
-}
-
-.name{
-	position: relative;
-	text-align: center;
-	margin-top: -250px;
-	border-style: solid;
-	margin-bottom: 50px;
-}
-
-.vSlika img{
-
-
-	width: 60%;
 	display: flex;
-	border-style: solid;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
+.hero_child h1 {
+	color: rgb(255, 255, 255);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 92px;
+	flex: 1;
+}
 
+.hero_child div img {
+	width: 400px;
+}
 
+.aboutUs_container {
+	margin: 150px auto;
+}
 
+.aboutUs_container_child {
+	width: 65%;
+	margin: auto;
+}
 
-.slika{
-	position: relative;
-	width: 40%;
-	border-style: solid;
+.child1 {
 	display: flex;
-	margin-left: 60%;
-	top:-985px;
-}
-
-
-.slika img{
-	transition: 1s;
-	padding: 15px;
+	justify-content: space-between;
+	align-items: flex-start;
 	width: 100%;
 }
 
-.slika img:hover{
-	
-	transform:scale(1.1);
+.child1 p {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: #302F2F;
+	font-weight: 400;
+	width: 600px;
+	line-height: 30px;
 }
 
+.child1 img {
+	width: 450px;
+}
+
+.child2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 150px;
+	width: 100%;
+}
+
+.child2 p {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: #302F2F;
+	font-weight: 400;
+	width: 600px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.child2 img {
+	width: 450px;
+}
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 
+@media (max-width: 1700px) {
+	.child1 p {
+		font-size: 1.1vw;
+		width: 500px;
+	}
+	.child2 p {
+		font-size: 1.1vw;
+		width: 500px;
+	}
+	.child1 img {
+		width: 25vw;
+	}
+	.child2 img {
+		width: 25vw;
+	}
+	.hero_child {
+		width: 75%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1400px) {
+	.child1 p {
+		font-size: 14px;
+		width: 400px;
+		line-height: 28px;
+	}
+	.child2 p {
+		font-size: 14px;
+		width: 350px;
+		line-height: 28px;
+	}
+	.child1 img {
+		width: 350px;
+	}
+	.child2 img {
+		width: 400px;
+	}
+}
+
 @media (max-width: 1200px) {
+	.aboutUs_container_child {
+		width: 85%;
+	}
+	.child1 {
+		justify-content: space-between;
+	}
+	.child1 p {
+		font-size: 1.3vw;
+		width: 450px;
+		line-height: 28px;
+	}
+	.child2 p {
+		font-size: 1.3vw;
+		width: 450px;
+		line-height: 28px;
+	}
+	.child1 img {
+		width: 35vw;
+	}
+	.child2 img {
+		width: 35vw;
+	}
+	.hero_child {
+		width: 85%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.image_gallery_sm {
+		width: 85%;
+	}
 	.container {
 		display: none;
 	}
@@ -517,8 +644,9 @@ footer {
 		width: 85%;
 		margin: auto;
 		position: relative;
-		top: 80px;
+		top: 3 0px;
 		align-items: center;
+		padding-bottom: 100px;
 	}
 	.responsive_links div {
 		border-bottom: 1px rgba(128, 128, 128, 0.247) solid;
@@ -694,7 +822,73 @@ footer {
     } */
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
+	.aboutUs_container_child {
+		width: 85%;
+	}
+	.child1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.child2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.child1 p {
+		font-size: 1.7vw;
+		width: 100%;
+		line-height: 30px;
+	}
+	.child2 p {
+		font-size: 1.7vw;
+		width: 100%;
+		line-height: 30px;
+	}
+	.child1 img {
+		margin-top: 70px;
+		width: 85vw;
+	}
+	.child2 img {
+		margin-top: 70px;
+		width: 85vw;
+	}
+	.hero_child div h1 {
+		font-size: 10vw;
+	}
+	.hero_child div img {
+		width: 36vw;
+	}
+	.hero {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.desktop_copyright a {
+		display: none;
+	}
+	.dekstop_copyright p {
+		display: none;
+	}
+	.desktop_copyright {
+		display: none;
+	}
+	.phone_copyright {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgb(19, 19, 19);
+		padding: 6px;
+	}
+	.phone_copyright p {
+		display: block;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;
@@ -706,6 +900,28 @@ footer {
 	}
 }
 
+@media (max-width: 900px) {
+	.proizvodnjaTekst {
+		font-size: 4vw;
+	}
+	.ugradnjaTekst {
+		font-size: 4vw;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+	.image_gallery_sm img {
+		width: 250px;
+		padding-bottom: 5%;
+	}
+}
+
 @media (max-height:800px) {
 	footer {
 		position: relative;
@@ -713,5 +929,81 @@ footer {
 	}
 	header {
 		padding-top: 40px;
+	}
+}
+
+@media (max-width: 800px) {
+	.aboutUs_container {
+		margin: 100px auto;
+	}
+	.child1 p {
+		font-size: 2vw;
+		width: 100%;
+		line-height: 28px;
+	}
+	.child2 p {
+		font-size: 2vw;
+		width: 100%;
+		line-height: 28px;
+	}
+	.child2 {
+		margin-top: 70px;
+	}
+}
+
+@media(max-width:600px) {
+	.child1 p {
+		font-size: 16px;
+		width: 100%;
+		line-height: 23px;
+	}
+	.child2 p {
+		font-size: 16px;
+		width: 100%;
+		line-height: 23px;
+	}
+	.child1 img {
+		margin-top: 30px;
+	}
+	.child2 img {
+		margin-top: 30px;
+	}
+	.hero {
+		height: 60vh;
+		background-position: left;
+		background-size: 1200px;
+	}
+	.aboutUs_container {
+		margin-top: 40px;
+	}
+	footer {
+		margin-top: 0;
+	}
+}
+
+@media(max-width:480px) {
+	.hero {
+		height: 50vh;
+		background-position: left;
+		background-size: 1200px;
+	}
+	.hero_child {
+		width: 85%;
+	}
+	.hero_child div img {
+		width: 180px;
+	}
+	.hero_child div h1 {
+		font-size: 34px;
+	}
+	.child1 p {
+		font-size: 14px;
+		width: 100%;
+		line-height: 23px;
+	}
+	.child2 p {
+		font-size: 14px;
+		width: 100%;
+		line-height: 23px;
 	}
 }
