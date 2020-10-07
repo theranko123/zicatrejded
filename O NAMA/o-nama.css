@@ -984,7 +984,6 @@ main {
 	.hero {
 		height: 50vh;
 		background-position: left;
-		background-size: 1200px;
 	}
 	.hero_child {
 		width: 85%;
