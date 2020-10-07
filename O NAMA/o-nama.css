@@ -491,7 +491,7 @@ main {
 }
 
 .child1 p {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	color: #302F2F;
 	font-weight: 400;
@@ -512,7 +512,7 @@ main {
 }
 
 .child2 p {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	color: #302F2F;
 	font-weight: 400;
@@ -969,9 +969,8 @@ main {
 		margin-top: 30px;
 	}
 	.hero {
-		height: 60vh;
+		height: 40vh;
 		background-position: left;
-		background-size: 1200px;
 	}
 	.aboutUs_container {
 		margin-top: 40px;
