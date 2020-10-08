@@ -256,6 +256,16 @@ nav a {
 	transition: 0.5s;
 }
 
+.farmerskoPletivo a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.stubovi a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .usluge_links {
 	display: none;
 }
