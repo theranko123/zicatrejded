@@ -5,10 +5,11 @@
 }
 
 body {
-	background-color: rgb(17, 17, 20);
+	background-color: white;
 }
 
 nav {
+	top: 0;
 	position: fixed;
 	height: 70px;
 	width: 100%;
@@ -18,7 +19,6 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1000;
-	top: 0;
 }
 
 ::-webkit-scrollbar {
@@ -92,7 +92,6 @@ nav a {
 
 .main_links:hover {
 	border-top: 2px solid rgb(255, 187, 0);
-	color: rgb(255, 255, 255);
 }
 
 .proizvodi-links {
@@ -104,7 +103,12 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.proizvodi_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .dropdown_container li {
@@ -237,6 +241,16 @@ nav a {
 	transition: 0.5s;
 }
 
+.bodljikavaZica a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .ekseri a:hover {
 	color: rgb(255, 187, 0);
 	transition: 0.5s;
@@ -266,7 +280,12 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.usluge_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .responsive_navbar {

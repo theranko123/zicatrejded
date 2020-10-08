@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+	top: 0;
 	position: fixed;
 	height: 70px;
 	width: 100%;
@@ -91,7 +92,6 @@ nav a {
 
 .main_links:hover {
 	border-top: 2px solid rgb(255, 187, 0);
-	color: rgb(255, 255, 255);
 }
 
 .proizvodi-links {
@@ -103,7 +103,12 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.proizvodi_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .dropdown_container li {
@@ -236,6 +241,16 @@ nav a {
 	transition: 0.5s;
 }
 
+.bodljikavaZica a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
 .ekseri a:hover {
 	color: rgb(255, 187, 0);
 	transition: 0.5s;
@@ -265,7 +280,12 @@ nav a {
 	position: absolute;
 	background-color: #08080a;
 	width: 200px;
-	margin: 24px;
+	margin: 22px;
+	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.usluge_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .responsive_navbar {
@@ -275,8 +295,6 @@ nav a {
 .responsive_links_container {
 	display: none;
 }
-
-
 
 footer {
 	position: relative;
@@ -422,18 +440,17 @@ footer {
 	margin-bottom: 5px;
 }
 
-.bgnd{
+.bgnd {
 	position: relative;
 	width: 65%;
 	margin: auto;
 	background-color: white;
 	padding-top: 400px;
-	padding-bottom:0px ;
+	padding-bottom: 0px;
 	border-style: solid;
-
 }
 
-.name{
+.name {
 	position: relative;
 	text-align: center;
 	margin-top: -250px;
@@ -441,39 +458,30 @@ footer {
 	margin-bottom: 50px;
 }
 
-.vSlika img{
-
-
+.vSlika img {
 	width: 60%;
 	display: flex;
 	border-style: solid;
 }
 
-
-
-
-
-.slika{
+.slika {
 	position: relative;
 	width: 40%;
 	border-style: solid;
 	display: flex;
 	margin-left: 60%;
-	top:-985px;
+	top: -985px;
 }
 
-
-.slika img{
+.slika img {
 	transition: 1s;
 	padding: 15px;
 	width: 100%;
 }
 
-.slika img:hover{
-	
-	transform:scale(1.1);
+.slika img:hover {
+	transform: scale(1.1);
 }
-
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 

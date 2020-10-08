@@ -107,6 +107,10 @@ nav a {
 	border-top: 2px rgb(255, 187, 0) solid;
 }
 
+.proizvodi_container:hover .main_links {
+	color: rgb(255, 187, 0);
+}
+
 .dropdown_container li {
 	color: white;
 	font-size: 14px;
@@ -237,22 +241,17 @@ nav a {
 	transition: 0.5s;
 }
 
-.ekseri a:hover {
-	color: rgb(255, 187, 0);
-	transition: 0.5s;
-}
-
-.farmerskoPletivo a:hover {
-	color: rgb(255, 187, 0);
-	transition: 0.5s;
-}
-
-.stubovi a:hover {
+.bodljikavaZica a:hover {
 	color: rgb(255, 187, 0);
 	transition: 0.5s;
 }
 
 .prateciMaterijal a:hover {
+	color: rgb(255, 187, 0);
+	transition: 0.5s;
+}
+
+.ekseri a:hover {
 	color: rgb(255, 187, 0);
 	transition: 0.5s;
 }
@@ -283,6 +282,10 @@ nav a {
 	width: 200px;
 	margin: 22px;
 	border-top: 2px rgb(255, 187, 0) solid;
+}
+
+.usluge_container:hover .main_links {
+	color: rgb(255, 187, 0);
 }
 
 .responsive_navbar {
@@ -858,19 +861,19 @@ main {
 		}
 	}
 	/* .navbar_animation_close {
-        animation-name: navbar_close;
-        animation-duration: .5s;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-    }
-    @keyframes navbar_close {
-        0% {
-            max-height: 100vh;
-        }
-        100% {
-            max-height: 0vh;
-        }
-    } */
+			animation-name: navbar_close;
+			animation-duration: .5s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+		}
+		@keyframes navbar_close {
+			0% {
+				max-height: 100vh;
+			}
+			100% {
+				max-height: 0vh;
+			}
+		} */
 }
 
 @media (max-width: 1000px) {
