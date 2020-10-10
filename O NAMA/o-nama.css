@@ -309,7 +309,6 @@ nav a {
 footer {
 	position: relative;
 	bottom: 0;
-	margin-top: 150px;
 }
 
 .footer-company-name a {
@@ -563,6 +562,20 @@ main {
 		justify-content: space-around;
 		align-items: center;
 	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 25%;
+	}
+	.footer-distributed .footer-right {
+		width: 25%;
+	}
+	.footer-distributed .footer-center {
+		width: 25%;
+	}
 }
 
 @media (max-width: 1400px) {
@@ -585,6 +598,20 @@ main {
 }
 
 @media (max-width: 1200px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 30%;
+	}
+	.footer-distributed .footer-right {
+		width: 30%;
+	}
+	.footer-distributed .footer-center {
+		width: 30%;
+	}
 	.aboutUs_container_child {
 		width: 85%;
 	}
@@ -916,15 +943,6 @@ main {
 	.ugradnjaTekst {
 		font-size: 4vw;
 	}
-	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-	.footer-distributed .footer-center i {
-		margin-left: 0;
-	}
 	.image_gallery_sm img {
 		width: 250px;
 		padding-bottom: 5%;
@@ -983,9 +1001,6 @@ main {
 	}
 	.aboutUs_container {
 		margin-top: 40px;
-	}
-	footer {
-		margin-top: 0;
 	}
 }
 

@@ -599,6 +599,8 @@ main {
 	margin-top: 30px;
 }
 
+/* --------------------------> RESPONSIVE  <--------------------------------- */
+
 @media (max-width: 1700px) {
 	.informacije_forma_container {
 		width: 65%;

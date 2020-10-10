@@ -308,7 +308,7 @@ nav a {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 }
 
 .footer-company-name a {
@@ -319,19 +319,19 @@ footer {
 	background-color: #08080a;
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .footer-distributed .footer-left {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed h3 {
@@ -343,7 +343,6 @@ footer {
 
 .footer-distributed .footer-left img {
 	width: 40px;
-	background-color: white;
 }
 
 .footer-distributed h3 span {
@@ -370,7 +369,7 @@ footer {
 }
 
 .footer-distributed .footer-center {
-	width: 35%;
+	width: 22%;
 }
 
 .footer-distributed .footer-center i {
@@ -412,7 +411,7 @@ footer {
 }
 
 .footer-distributed .footer-right {
-	width: 30%;
+	width: 22%;
 }
 
 .footer-distributed .footer-company-about {
@@ -450,52 +449,44 @@ footer {
 	margin-bottom: 5px;
 }
 
-.bgnd {
-	position: relative;
-	width: 65%;
-	margin: auto;
-	background-color: white;
-	padding-top: 400px;
-	padding-bottom: 0px;
-	border-style: solid;
-}
-
-.name {
-	position: relative;
-	text-align: center;
-	margin-top: -250px;
-	border-style: solid;
-	margin-bottom: 50px;
-}
-
-.vSlika img {
-	width: 60%;
-	display: flex;
-	border-style: solid;
-}
-
-.slika {
-	position: relative;
-	width: 40%;
-	border-style: solid;
-	display: flex;
-	margin-left: 60%;
-	top: -985px;
-}
-
-.slika img {
-	transition: 1s;
-	padding: 15px;
-	width: 100%;
-}
-
-.slika img:hover {
-	transform: scale(1.1);
+.phone_copyright {
+	display: none;
 }
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 
+@media (max-width: 1700px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 25%;
+	}
+	.footer-distributed .footer-right {
+		width: 25%;
+	}
+	.footer-distributed .footer-center {
+		width: 25%;
+	}
+}
+
 @media (max-width: 1200px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 30%;
+	}
+	.footer-distributed .footer-right {
+		width: 30%;
+	}
+	.footer-distributed .footer-center {
+		width: 30%;
+	}
 	.container {
 		display: none;
 	}
@@ -712,7 +703,30 @@ footer {
     } */
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
+	/*OVO SAM DODAO ZA COPYRIGHT*/
+	.desktop_copyright a {
+		display: none;
+	}
+	.dekstop_copyright p {
+		display: none;
+	}
+	.desktop_copyright {
+		display: none;
+	}
+	.phone_copyright {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgb(19, 19, 19);
+		padding: 6px;
+	}
+	.phone_copyright p {
+		display: block;
+	}
+	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: block;
 		width: 100%;

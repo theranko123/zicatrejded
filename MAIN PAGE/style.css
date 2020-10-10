@@ -614,6 +614,23 @@ footer {
 
 /* ------------------------------------------------------>Responsive Website<------------------------------------------------------------ */
 
+@media (max-width: 1700px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 25%;
+	}
+	.footer-distributed .footer-right {
+		width: 25%;
+	}
+	.footer-distributed .footer-center {
+		width: 25%;
+	}
+}
+
 @media (max-width: 1600px) {
 	.image_gallery_sm img {
 		width: 300px;
@@ -637,6 +654,20 @@ footer {
 }
 
 @media (max-width: 1200px) {
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer-distributed .footer-left {
+		width: 30%;
+	}
+	.footer-distributed .footer-right {
+		width: 30%;
+	}
+	.footer-distributed .footer-center {
+		width: 30%;
+	}
 	.image_gallery_sm {
 		width: 85%;
 	}
@@ -856,7 +887,7 @@ footer {
     } */
 }
 
-@media(max-width:1000px) {
+@media (max-width: 1000px) {
 	.proizvodnjaTekst {
 		font-size: 3vw;
 	}
@@ -872,9 +903,6 @@ footer {
 	.hero h2 {
 		font-size: 4vw;
 	}
-}
-
-@media (max-width: 1000px) {
 	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.desktop_copyright a {
 		display: none;
