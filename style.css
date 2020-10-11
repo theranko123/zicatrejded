@@ -476,6 +476,10 @@ footer {
 	margin: auto;
 }
 
+.hero_buttons a {
+	outline: none;
+}
+
 .hero_buttons button {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
