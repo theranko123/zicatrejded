@@ -456,7 +456,7 @@ footer {
 .hero {
 	position: relative;
 	top: 70px;
-	background-image: url("../Images/background.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.150), rgba(0, 0, 0, 0.150)), url("../Images/background.jpg");
 	max-width: 100%;
 	height: 700px;
 	background-repeat: no-repeat;
@@ -467,6 +467,50 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.hero_buttons {
+	position: relative;
+	top: 60px;
+	width: 65%;
+	margin: auto;
+}
+
+.hero_buttons button {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	width: 200px;
+	padding: 15px;
+	cursor: pointer;
+	margin: 10px;
+	font-size: 15px;
+	outline: none;
+}
+
+.heroButton_proizvodi {
+	background-color: #E68414;
+	color: white;
+	border: 2px #E68414 solid;
+}
+
+.heroButton_proizvodi:hover {
+	background-color: transparent;
+	transition: .5s;
+	color: white;
+	border: 2px #ffffff solid;
+}
+
+.heroButton_oNama {
+	background-color: transparent;
+	color: white;
+	border: 2px white solid;
+}
+
+.heroButton_oNama:hover {
+	background-color: #E68414;
+	color: white;
+	border: 2px #E68414 solid;
+	transition: .5s;
 }
 
 .hero_text {
@@ -908,10 +952,10 @@ footer {
 		width: 95%;
 	}
 	.hero h1 {
-		font-size: 6vw;
+		font-size: 7.5vw;
 	}
 	.hero h2 {
-		font-size: 4vw;
+		font-size: 3.8vw;
 	}
 	/*OVO SAM DODAO ZA COPYRIGHT*/
 	.desktop_copyright a {
@@ -967,6 +1011,16 @@ footer {
 		width: 250px;
 		padding-bottom: 5%;
 	}
+	.hero_buttons button {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		width: 170px;
+		padding: 12px;
+		cursor: pointer;
+		margin: 10px;
+		font-size: 14px;
+		outline: none;
+	}
 }
 
 @media (max-height:800px) {
@@ -980,6 +1034,13 @@ footer {
 }
 
 @media (max-width: 800px) {
+	.hero_buttons {
+		width: 85%;
+	}
+	.hero_buttons button {
+		width: 140px;
+		padding: 8px;
+	}
 	.image_gallery_sm {
 		width: 95%;
 		top: 70px;
@@ -1027,13 +1088,14 @@ footer {
 		top: 60px;
 	}
 	.hero h1 {
-		font-size: 6vw;
+		font-size: 7vw;
 	}
 	.hero h2 {
 		font-size: 4vw;
 	}
 	.hero {
-		height: 400px;
+		padding-bottom: 100px;
+		margin: auto;
 	}
 	.secondMain_container {
 		top: 120px;
@@ -1067,6 +1129,14 @@ footer {
 }
 
 @media(max-width:480px) {
+	.hero_buttons {
+		width: 95%;
+	}
+	.hero_buttons button {
+		width: 140px;
+		padding: 9px;
+		font-size: 13px;
+	}
 	.proizvodnjaTekst {
 		font-size: 4.5vw;
 	}
@@ -1082,14 +1152,30 @@ footer {
 		margin-bottom: 100px;
 	}
 	.hero h1 {
-		font-size: 6.5vw;
+		font-size: 11.5vw;
 	}
 	.hero h2 {
-		font-size: 5vw;
+		font-size: 5.3vw;
+	}
+	.hero {
+		height: 520px;
+		margin: auto;
 	}
 }
 
 @media(max-width:430px) {
+	.hero_buttons {
+		width: 85%;
+	}
+	.hero_buttons button {
+		width: 100%;
+		padding: 9px;
+		font-size: 12.5px;
+	}
+	.hero {
+		padding-bottom: 70px;
+		margin: auto;
+	}
 	.proizvodnjaTekst span {
 		font-size: 7vw;
 	}
