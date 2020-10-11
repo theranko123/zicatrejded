@@ -469,6 +469,11 @@ footer {
 	text-align: center;
 }
 
+.hero_text {
+	width: 65%;
+	margin: auto;
+}
+
 .hero h1 {
 	color: rgb(255, 255, 255);
 	font-family: 'Montserrat', sans-serif;
@@ -655,6 +660,10 @@ footer {
 }
 
 @media (max-width: 1200px) {
+	.hero_text {
+		width: 85%;
+		margin: auto;
+	}
 	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
 		display: inline-block;
 		vertical-align: top;
