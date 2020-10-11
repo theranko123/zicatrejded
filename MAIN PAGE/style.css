@@ -1049,6 +1049,7 @@ footer {
 	.hero_buttons button {
 		width: 140px;
 		padding: 8px;
+		font-size: 12px;
 	}
 	.image_gallery_sm {
 		width: 95%;
